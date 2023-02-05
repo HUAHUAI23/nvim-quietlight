@@ -109,7 +109,7 @@ M.hl_group = function(palette)
 		},
 		MatchParen = {
 			fg = palette.gui.black._50,
-			bg = palette.gui.grenn._100,
+			bg = palette.gui.green._100,
 			ctermfg = palette.cterm.gray._0,
 			ctermbg = palette.cterm.green._50,
 		},
