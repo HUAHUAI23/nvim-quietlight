@@ -1,3 +1,17 @@
+" File:       quietlight.vim
+" Maintainer: aonemd
+" URL:        https://github.com/aonemd/quietlight.vim
+" License:    MIT
+
+" Initialisation:"{{{
+" ----------------------------------------------------------------------------
+
+hi clear
+
+if exists("syntax_on")
+  syntax reset
+endif
+
 let s:style = 'light'
 
 let g:colors_name = "quietlight"
@@ -237,8 +251,174 @@ exe "let s:sp_lime        = ' guisp=". s:palette.gui.lime[s:style] ."'"
 exe "let s:sp_olive       = ' guisp=". s:palette.gui.olive[s:style] ."'"
 exe "let s:sp_gray        = ' guisp=". s:palette.gui.gray[s:style] ."'"
 
-" =============================================================
+"}}}
+" Vim Highlighting: (see :help highlight-groups)"{{{
+" ----------------------------------------------------------------------------
+" exe "hi! ColorColumn"   .s:fg_none        .s:bg_selection   .s:fmt_none   
+"   Conceal"
+"   Cursor"
+"   CursorIM"
+" exe "hi! CursorColumn"  .s:fg_none        .s:bg_line        .s:fmt_none 
+" exe "hi! CursorLine"    .s:fg_none        .s:bg_line        .s:fmt_none 
+" exe "hi! Directory"     .s:fg_blue        .s:bg_none        .s:fmt_none 
+" exe "hi! DiffAdd"       .s:fg_foreground  .s:bg_addbg       .s:fmt_none   
+" exe "hi! DiffChange"    .s:fg_foreground  .s:bg_changebg    .s:fmt_none 
+" exe "hi! DiffDelete"    .s:fg_background  .s:bg_delbg       .s:fmt_none 
+" exe "hi! DiffText"      .s:fg_background  .s:bg_blue        .s:fmt_none
+" exe "hi! ErrorMsg"      .s:fg_background  .s:bg_red         .s:fmt_stnd
+" exe "hi! VertSplit"     .s:fg_selection   .s:bg_none        .s:fmt_none
+" exe "hi! Folded"        .s:fg_foreground  .s:bg_olive       .s:fmt_none
+" exe "hi! FoldColumn"    .s:fg_none        .s:bg_olive       .s:fmt_none
+" exe "hi! SignColumn"    .s:fg_none        .s:bg_background  .s:fmt_none
+"   Incsearch"
+" exe "hi! LineNr"        .s:fg_foreground  .s:bg_none        .s:fmt_none
+" exe "hi! CursorLineNr"  .s:fg_purple      .s:bg_none        .s:fmt_none
+" exe "hi! MatchParen"    .s:fg_foreground  .s:bg_lime        .s:fmt_none
+" exe "hi! ModeMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
+" exe "hi! MoreMsg"       .s:fg_green       .s:bg_none        .s:fmt_none
+" exe "hi! NonText"       .s:fg_selection   .s:bg_none        .s:fmt_none
+" exe "hi! Pmenu"         .s:fg_foreground  .s:bg_background  .s:fmt_none
+" exe "hi! PmenuSel"      .s:fg_lime        .s:bg_foreground  .s:fmt_revr
+" exe "hi! InfoPopup"     .s:fg_foreground  .s:bg_background  .s:fmt_none
+"   PmenuSbar"
+"   PmenuThumb"
+" exe "hi! Question"          .s:fg_green       .s:bg_none          .s:fmt_none
+" exe "hi! Search"            .s:fg_background  .s:bg_lightmauve    .s:fmt_none
+" exe "hi! SpecialKey"        .s:fg_selection   .s:bg_none          .s:fmt_none
+" exe "hi! SpellCap"          .s:fg_darkblue    .s:bg_none      .s:fmt_undr
+" exe "hi! SpellLocal"        .s:fg_aqua        .s:bg_darkcyan      .s:fmt_undr
+" exe "hi! SpellBad"          .s:fg_darkred     .s:bg_none          .s:fmt_undr
+" exe "hi! SpellRare"         .s:fg_purple      .s:bg_darkpurple    .s:fmt_undr
+" exe "hi! StatusLine"        .s:fg_mauve       .s:bg_statusline    .s:fmt_revr
+" exe "hi! StatusLineNC"      .s:fg_lightmauve  .s:bg_statuslinenc  .s:fmt_revr
+" exe "hi! StatusLineTerm"    .s:fg_mauve       .s:bg_statusline    .s:fmt_revr
+" exe "hi! StatusLineTermNC"  .s:fg_lightmauve  .s:bg_statuslinenc  .s:fmt_revr
+" exe "hi! TabLine"           .s:fg_foreground  .s:bg_comment       .s:fmt_none
+" exe "hi! TabLineFill"       .s:fg_background  .s:bg_background    .s:fmt_revr
+" exe "hi! EndOfBuffer"       .s:fg_background  .s:bg_background    .s:fmt_none
+" "   TabLineSel"
+" exe "hi! Title"             .s:fg_red         .s:bg_none        .s:fmt_bold
+" exe "hi! Visual"            .s:fg_background  .s:bg_selection   .s:fmt_none
+" "   VisualNos"
+" exe "hi! WarningMsg"        .s:fg_lime        .s:bg_none        .s:fmt_none
+" exe "hi! WildMenu"          .s:fg_foreground  .s:bg_lime        .s:fmt_none
+" exe "hi! LongLineWarning"   .s:fg_none        .s:bg_linewarning .s:fmt_undr
 
 
+" exe "hi! Normal"        .s:fg_foreground  .s:bg_background    .s:fmt_none 
 
+"}}}
+" Generic Syntax Highlighting: (see :help group-name)"{{{
+" ----------------------------------------------------------------------------
+exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
 
+exe "hi! Constant"        .s:fg_orange      .s:bg_none        .s:fmt_none
+exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
+"   Character"
+"   Number"
+"   Boolean"
+"   Float"
+
+exe "hi! Identifier"      .s:fg_purple      .s:bg_none        .s:fmt_none
+exe "hi! Function"        .s:fg_red         .s:bg_none        .s:fmt_bold
+
+exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
+"   Conditional"
+"   Repeat"
+"   Label"
+exe "hi! Operator"        .s:fg_gray        .s:bg_none        .s:fmt_none
+exe "hi! Keyword"         .s:fg_blue        .s:bg_none        .s:fmt_none
+"   Exception"
+
+exe "hi! PreProc"         .s:fg_blue      .s:bg_none        .s:fmt_none
+"   Include"
+"   Define"
+"   Macro"
+"   PreCondit"
+
+exe "hi! Type"            .s:fg_purple      .s:bg_none        .s:fmt_bold
+exe "hi! StorageClass"    .s:fg_red         .s:bg_none        .s:fmt_none
+exe "hi! Structure"       .s:fg_blue        .s:bg_none        .s:fmt_none
+exe "hi! Typedef"         .s:fg_purple      .s:bg_none        .s:fmt_none
+
+exe "hi! Special"         .s:fg_green       .s:bg_none        .s:fmt_none
+"   SpecialChar"
+"   Tag"
+"   Delimiter"
+"   SpecialComment"
+"   Debug"
+"
+exe "hi! Underlined"      .s:fg_blue        .s:bg_none        .s:fmt_none
+
+exe "hi! Ignore"          .s:fg_none        .s:bg_none        .s:fmt_none
+
+exe "hi! Error"           .s:fg_darkred     .s:bg_none        .s:fmt_undr
+
+exe "hi! Todo"            .s:fg_foreground  .s:bg_none        .s:fmt_bold
+
+" Quickfix window highlighting
+exe "hi! qfLineNr"        .s:fg_yellow      .s:bg_none        .s:fmt_none
+"   qfFileName"
+"   qfLineNr"
+"   qfError"
+
+"}}}
+" Diff Syntax Highlighting:"{{{
+" ----------------------------------------------------------------------------
+" Diff
+"   diffOldFile
+"   diffNewFile
+"   diffFile
+"   diffOnly
+"   diffIdentical
+"   diffDiffer
+"   diffBDiffer
+"   diffIsA
+"   diffNoEOL
+"   diffCommon
+hi! link diffRemoved Constant
+"   diffChanged
+hi! link diffAdded Special
+"   diffLine
+"   diffSubname
+"   diffComment
+
+"}}}
+" True Color Terminal Colorscheme:"{{{
+" ----------------------------------------------------------------------------
+"  This is atelierforest-dark color palette
+let g:terminal_ansi_colors = [
+      \ "#f5f5f5", "#aa3731", "#448c27", "#ab6526",
+      \ "#4b83cd", "#7a3e9d", "#00ad9c", "#a8a19f",
+      \ "#777777", "#aa3731", "#448c27", "#ab6526",
+      \ "#4b83cd", "#7a3e9d", "#00ad9c", "#f5f5f5"
+      \]
+
+"}}}
+" GitGutter Sign Highlighting:"{{{
+" ----------------------------------------------------------------------------
+exe "hi! GitGutterAdd"     .s:fg_gitgutteradd  .s:bg_none  .s:fmt_none
+exe "hi! GitGutterChange"  .s:fg_gitgutterchg  .s:bg_none  .s:fmt_none
+exe "hi! GitGutterDelete"  .s:fg_gitgutterdlt  .s:bg_none  .s:fmt_none
+
+"}}}
+
+" Signify Sign Highlighting:"{{{
+" ----------------------------------------------------------------------------
+exe "hi! SignifySignAdd"     .s:fg_gitgutteradd  .s:bg_none  .s:fmt_none
+exe "hi! SignifySignChange"  .s:fg_gitgutterchg  .s:bg_none  .s:fmt_none
+exe "hi! SignifySignDelete"  .s:fg_gitgutterdlt  .s:bg_none  .s:fmt_none
+
+"}}}
+" Nvim Stuff:"{{{
+" ----------------------------------------------------------------------------
+exe "hi! NormalFloat"               .s:fg_foreground  .s:bg_background  .s:fmt_none
+exe "hi! FloatBorder"               .s:fg_selection   .s:bg_none        .s:fmt_none
+
+"}}}
+"
+" This is needed for some reason: {{{
+
+let &background = s:style
+
+" }}}
