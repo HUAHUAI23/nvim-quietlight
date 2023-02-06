@@ -1,16 +1,31 @@
 local M = {}
+-- Imports.
+local base_configuration = require("nvim-quietlight.base_configuration")
+
 M.setup = function(user_opts)
-	-- TODO: merge user config and default config
-	-- vim.tbl_deep_extend
+	-- merge default and user options
+	vim.g.quietlight_opts = vim.tbl_deep_extend("force", vim.g.quietlight_opts or base_configuration, user_opts or {})
 end
 
 M.load = function()
+	local opts = vim.g.quietlight_opts or base_configuration
 	local palette = require("nvim-quietlight.palette.quiet")
+
 	local base_highlights = {
 		editor = require("nvim-quietlight.hl_group.editor").hl_group(palette),
+		syntax = require("nvim-quietlight.hl_group.syntax").hl_group(palette, opts),
 	}
+
+	-- set base_highlights
 	for _, hl in pairs(base_highlights) do
 		M.set_hl(hl)
+	end
+
+	for plugin, enabled in pairs(opts.plugins) do
+		if enabled then
+			local hl_group = require("nvim-tundra.hl_group.plugins." .. plugin).hl_group(palette, opts)
+			M.set_hl(hl_group)
+		end
 	end
 end
 

@@ -280,6 +280,59 @@ M.hl_group = function(palette)
 			ctermfg = palette.cterm.transparent,
 			ctermbg = palette.cterm.transparent,
 		},
+		Underlined = {
+			fg = palette.gui.blue._100,
+			bg = palette.gui.transparent,
+			ctermfg = palette.cterm.gray._0,
+			ctermbg = palette.cterm.transparent,
+		},
+		Ignore = {
+			fg = palette.gui.transparent,
+			bg = palette.gui.transparent,
+			ctermfg = palette.cterm.transparent,
+			ctermbg = palette.cterm.transparent,
+		},
+		Error = {
+			fg = palette.gui.red._0,
+			bg = palette.gui.transparent,
+			undercurl = true,
+			ctermfg = palette.cterm.red._0,
+			ctermbg = palette.cterm.transparent,
+		},
+		Todo = {
+			fg = palette.gui.black._50,
+			bg = palette.gui.transparent,
+			bold = true,
+			ctermfg = palette.cterm.gray._0,
+			ctermbg = palette.cterm.transparent,
+		},
+		qfLineNr = {
+			fg = palette.gui.yellow._0,
+			bg = palette.gui.transparent,
+			bold = true,
+			ctermfg = palette.cterm.yellow._0,
+			ctermbg = palette.cterm.transparent,
+		},
+
+		-- diff
+		diffAdded = {
+			fg = palette.gui.green._50,
+			bg = palette.gui.transparent,
+			ctermfg = palette.cterm.green._0,
+			ctermbg = palette.cterm.transparent,
+		},
+		diffRemoved = {
+			fg = palette.gui.orange._0,
+			bg = palette.gui.transparent,
+			ctermfg = palette.cterm.orange._0,
+			ctermbg = palette.cterm.transparent,
+		},
+		FloatBorder = {
+			fg = palette.gui.gray._100,
+			bg = palette.gui.transparent,
+			ctermfg = palette.cterm.gray._100,
+			ctermbg = palette.cterm.transparent,
+		},
 	}
 end
 return M

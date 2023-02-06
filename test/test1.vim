@@ -242,3 +242,4 @@ exe "let s:sp_gray        = ' guisp=". s:palette.gui.gray[s:style] ."'"
 
 
 
+

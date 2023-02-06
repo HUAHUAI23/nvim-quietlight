@@ -310,54 +310,54 @@ exe "let s:sp_gray        = ' guisp=". s:palette.gui.gray[s:style] ."'"
 "}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
 " ----------------------------------------------------------------------------
-exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
-
-exe "hi! Constant"        .s:fg_orange      .s:bg_none        .s:fmt_none
-exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
+" exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fmt_none
+"
+" exe "hi! Constant"        .s:fg_orange      .s:bg_none        .s:fmt_none
+" exe "hi! String"          .s:fg_green       .s:bg_none        .s:fmt_none
 "   Character"
 "   Number"
 "   Boolean"
 "   Float"
 
-exe "hi! Identifier"      .s:fg_purple      .s:bg_none        .s:fmt_none
-exe "hi! Function"        .s:fg_red         .s:bg_none        .s:fmt_bold
-
-exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
-"   Conditional"
-"   Repeat"
-"   Label"
-exe "hi! Operator"        .s:fg_gray        .s:bg_none        .s:fmt_none
-exe "hi! Keyword"         .s:fg_blue        .s:bg_none        .s:fmt_none
-"   Exception"
-
-exe "hi! PreProc"         .s:fg_blue      .s:bg_none        .s:fmt_none
+" exe "hi! Identifier"      .s:fg_purple      .s:bg_none        .s:fmt_none
+" exe "hi! Function"        .s:fg_red         .s:bg_none        .s:fmt_bold
+"
+" exe "hi! Statement"       .s:fg_blue        .s:bg_none        .s:fmt_none
+" "   Conditional"
+" "   Repeat"
+" "   Label"
+" exe "hi! Operator"        .s:fg_gray        .s:bg_none        .s:fmt_none
+" exe "hi! Keyword"         .s:fg_blue        .s:bg_none        .s:fmt_none
+" "   Exception"
+"
+" exe "hi! PreProc"         .s:fg_blue      .s:bg_none        .s:fmt_none
 "   Include"
 "   Define"
 "   Macro"
 "   PreCondit"
 
-exe "hi! Type"            .s:fg_purple      .s:bg_none        .s:fmt_bold
-exe "hi! StorageClass"    .s:fg_red         .s:bg_none        .s:fmt_none
-exe "hi! Structure"       .s:fg_blue        .s:bg_none        .s:fmt_none
-exe "hi! Typedef"         .s:fg_purple      .s:bg_none        .s:fmt_none
-
-exe "hi! Special"         .s:fg_green       .s:bg_none        .s:fmt_none
+" exe "hi! Type"            .s:fg_purple      .s:bg_none        .s:fmt_bold
+" exe "hi! StorageClass"    .s:fg_red         .s:bg_none        .s:fmt_none
+" exe "hi! Structure"       .s:fg_blue        .s:bg_none        .s:fmt_none
+" exe "hi! Typedef"         .s:fg_purple      .s:bg_none        .s:fmt_none
+"
+" exe "hi! Special"         .s:fg_green       .s:bg_none        .s:fmt_none
 "   SpecialChar"
 "   Tag"
 "   Delimiter"
 "   SpecialComment"
 "   Debug"
 "
-exe "hi! Underlined"      .s:fg_blue        .s:bg_none        .s:fmt_none
-
-exe "hi! Ignore"          .s:fg_none        .s:bg_none        .s:fmt_none
-
-exe "hi! Error"           .s:fg_darkred     .s:bg_none        .s:fmt_undr
-
-exe "hi! Todo"            .s:fg_foreground  .s:bg_none        .s:fmt_bold
-
-" Quickfix window highlighting
-exe "hi! qfLineNr"        .s:fg_yellow      .s:bg_none        .s:fmt_none
+" exe "hi! Underlined"      .s:fg_blue        .s:bg_none        .s:fmt_none
+"
+" exe "hi! Ignore"          .s:fg_none        .s:bg_none        .s:fmt_none
+"
+" exe "hi! Error"           .s:fg_darkred     .s:bg_none        .s:fmt_undr
+"
+" exe "hi! Todo"            .s:fg_foreground  .s:bg_none        .s:fmt_bold
+"
+" " Quickfix window highlighting
+" exe "hi! qfLineNr"        .s:fg_yellow      .s:bg_none        .s:fmt_none
 "   qfFileName"
 "   qfLineNr"
 "   qfError"
@@ -397,9 +397,9 @@ let g:terminal_ansi_colors = [
 "}}}
 " GitGutter Sign Highlighting:"{{{
 " ----------------------------------------------------------------------------
-exe "hi! GitGutterAdd"     .s:fg_gitgutteradd  .s:bg_none  .s:fmt_none
-exe "hi! GitGutterChange"  .s:fg_gitgutterchg  .s:bg_none  .s:fmt_none
-exe "hi! GitGutterDelete"  .s:fg_gitgutterdlt  .s:bg_none  .s:fmt_none
+" exe "hi! GitGutterAdd"     .s:fg_gitgutteradd  .s:bg_none  .s:fmt_none
+" exe "hi! GitGutterChange"  .s:fg_gitgutterchg  .s:bg_none  .s:fmt_none
+" exe "hi! GitGutterDelete"  .s:fg_gitgutterdlt  .s:bg_none  .s:fmt_none
 
 "}}}
 
