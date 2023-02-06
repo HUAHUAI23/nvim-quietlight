@@ -23,7 +23,7 @@ M.load = function()
 
 	for plugin, enabled in pairs(opts.plugins) do
 		if enabled then
-			local hl_group = require("nvim-tundra.hl_group.plugins." .. plugin).hl_group(palette, opts)
+			local hl_group = require("nvim-quietlight.hl_group.plugins." .. plugin).hl_group(palette, opts)
 			M.set_hl(hl_group)
 		end
 	end
