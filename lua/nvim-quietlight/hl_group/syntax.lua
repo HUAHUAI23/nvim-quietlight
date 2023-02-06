@@ -130,6 +130,19 @@ M.hl_group = function(palette, opts)
 			ctermfg = palette.cterm.red._0,
 			ctermbg = palette.cterm.transparent,
 		},
+		Macro = {
+			fg = palette.gui.red._0,
+			bg = palette.gui.transparent,
+			bold = true,
+			ctermfg = palette.cterm.red._0,
+			ctermbg = palette.cterm.transparent,
+		},
+		Delimiter = {
+			fg = palette.gui.gray._100,
+			bg = palette.gui.transparent,
+			ctermfg = palette.cterm.gray._50,
+			ctermbg = palette.cterm.transparent,
+		}, -- e.g., brackets and commas.
 	}
 end
 return M

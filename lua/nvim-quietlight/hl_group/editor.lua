@@ -325,6 +325,7 @@ M.hl_group = function(palette, opts)
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.gray._100,
 			ctermbg = palette.cterm.transparent,
+			bold = true,
 		},
 		Title = {
 			fg = palette.gui.red._50,
@@ -372,10 +373,10 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		},
 		Todo = {
-			fg = palette.gui.black._50,
+			fg = palette.gui.black._100,
 			bg = palette.gui.transparent,
 			bold = true,
-			ctermfg = palette.cterm.gray._0,
+			ctermfg = palette.cterm.gray._50,
 			ctermbg = palette.cterm.transparent,
 		},
 		qfLineNr = {

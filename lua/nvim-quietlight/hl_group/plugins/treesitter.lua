@@ -10,6 +10,12 @@ M.hl_group = function(palette, opts)
 		return
 	end
 	return {
+		-- Punctuation.
+		-- e.g., brackets and commas.
+		["@punct.delimiter"] = { link = "Delimiter" },
+		["@punct.bracket"] = { link = "Delimiter" },
+		["@punct.special"] = { link = "Delimiter" },
+
 		-- Literals.
 		["@string"] = { link = "String" },
 		["@string.regex"] = {
@@ -19,8 +25,11 @@ M.hl_group = function(palette, opts)
 			ctermfg = palette.cterm.blue._50,
 			ctermbg = palette.cterm.transparent,
 		},
-
+		["@string.escape"] = { link = "@string.regex" },
 		["@string.special"] = { link = "String" },
+		["@character"] = { link = "SpecialKey" },
+		["@character.special"] = { link = "SpecialKey" },
+
 		["@number"] = { link = "Number" },
 		["@float"] = { link = "Float" },
 		["@boolean"] = { link = "Boolean" },
@@ -37,6 +46,7 @@ M.hl_group = function(palette, opts)
 			ctermfg = palette.cterm.blue._150,
 			ctermbg = palette.cterm.transparent,
 		},
+		["@parameter.reference"] = { link = "@parameter" },
 
 		-- Keywords.
 		["@keyword"] = { link = "Keyword" },
@@ -83,13 +93,55 @@ M.hl_group = function(palette, opts)
 			ctermfg = palette.cterm.orange._0,
 			ctermbg = palette.cterm.transparent,
 		},
-		-- ["@const.macro"] = { link = "Macro" },
+		["@const.macro"] = { link = "Macro" },
 
 		["@symbol"] = { link = "Special" },
 
-		-- Text.
+		-- Text. -- Markdown
+
+		["@text"] = { link = "Normal" },
+		["@text.strong"] = {
+			fg = palette.gui.red._30,
+			bg = opts.transparent_background and palette.gui.transparent or palette.gui.white._50,
+			bold = true,
+			ctermfg = palette.cterm.red._0,
+			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
+		},
+
+		["@text.emphasis"] = {
+			fg = palette.gui.green._50,
+			bg = opts.transparent_background and palette.gui.transparent or palette.gui.white._50,
+			bold = true,
+			ctermfg = palette.cterm.green._50,
+			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
+		},
+		["@text.underline"] = { underline = true },
+		["@text.strike"] = { strikethrough = true },
+		["@text.title"] = { link = "Keyword" },
+		["@text.literal"] = { link = "String" },
+		["@text.uri"] = { link = "Keyword" },
+		["@text.math"] = { link = "Special" },
+		["@text.environment"] = { link = "Macro" },
 		["@text.environment.name"] = { link = "Type" },
 		["@text.reference"] = { link = "Constant" },
+
+		["@text.danger"] = { link = "Exception" },
+		["@text.note"] = {
+			fg = palette.gui.gray._100,
+			bg = opts.transparent_background and palette.gui.transparent or palette.gui.white._50,
+			bold = true,
+			ctermfg = palette.cterm.gray._50,
+			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
+		},
+
+		["@text.todo"] = { link = "Todo" },
+		["@text.warning"] = {
+			fg = palette.gui.orange._30,
+			bg = opts.transparent_background and palette.gui.transparent or palette.gui.white._50,
+			bold = true,
+			ctermfg = palette.cterm.orange._0,
+			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
+		},
 
 		-- Tags.
 		["@tag.delimiter"] = { link = "Comment" },
