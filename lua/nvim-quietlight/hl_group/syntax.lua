@@ -123,6 +123,13 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		}, opts.syntax.numbers),
 		Float = { link = "Number" },
+		Exception = {
+			fg = palette.gui.red._0,
+			bg = palette.gui.transparent,
+			bold = true,
+			ctermfg = palette.cterm.red._0,
+			ctermbg = palette.cterm.transparent,
+		},
 	}
 end
 return M

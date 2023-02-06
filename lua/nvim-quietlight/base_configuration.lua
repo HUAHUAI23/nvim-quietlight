@@ -23,8 +23,10 @@ local base_configuration = {
 		preproc = {},
 	},
 	plugins = {
-		-- treesitter = true,
 		gitsigns = true,
+		lsp = true,
+		bufferline = true,
+		treesitter = true,
 	},
 }
 return base_configuration
