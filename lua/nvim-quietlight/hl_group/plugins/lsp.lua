@@ -54,13 +54,12 @@ M.hl_group = function(palette, opts)
 			ctermfg = palette.cterm.gray._50,
 			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
 		},
+
 		-- https://neovim.io/doc/user/diagnostic.html
 		-- DiagnosticUnderlineError xxx cterm=underline gui=underline guisp=Red
 		-- underline
-		-- DiagnosticUnderlineError = { sp = "#a6b39b", underdotted = true },
-		-- DiagnosticUnderlineError, DiagnosticUnderlineWarn
-		-- https://github.com/neoclide/coc.nvim/issues/472
-		-- DiagnosticUnderlineWarn = { udercurl = true },
+		DiagnosticUnderlineError = { strikethrough = true, sp = "Red" }, -- diagnostic underline
+		DiagnosticUnderlineWarn = { standout = true, sp = "Orange" },
 	}
 end
 
