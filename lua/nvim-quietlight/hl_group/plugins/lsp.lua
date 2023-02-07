@@ -55,7 +55,8 @@ M.hl_group = function(palette, opts)
 			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
 		},
 		-- underline
-		LspDiagnosticsUnderlineError = { style = "undercurl" },
+		-- LspDiagnosticsUnderlineError = { undercurl = true },
+		-- https://github.com/neoclide/coc.nvim/issues/472
 	}
 end
 

@@ -33,7 +33,8 @@
   </tr>
 </table>
 <br>
-[中文指南](./README-zh.md)
+
+[中文指南](./README-zh.md)  
 [**lualine.nvim**](https://github.com/nvim-lualine/lualine.nvim) for statusline, [**bufferline.nvim**](https://github.com/akinsho/bufferline.nvim) for tabline, and [**winbar.nvim**](https://github.com/fgheng/winbar.nvim) for winbar
 
 ## Requirements
