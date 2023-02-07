@@ -1,4 +1,5 @@
 local M = {}
+-- https://neovim.io/doc/user/syntax.html#group-name
 -- local palette = require("nvim-quietlight.palette.quiet")
 -- local opts = require("nvim-quietlight.base_configuration")
 M.hl_group = function(palette, opts)
@@ -63,7 +64,7 @@ M.hl_group = function(palette, opts)
 			italic = true,
 			ctermfg = palette.cterm.blue._100,
 			ctermbg = palette.cterm.transparent,
-		}, opts.syntax.preproc),
+		}, opts.syntax.preproc), -- like #include #define
 		Type = vim.tbl_extend("force", {
 			fg = palette.gui.purple._50,
 			bg = palette.gui.transparent,
@@ -143,6 +144,7 @@ M.hl_group = function(palette, opts)
 			ctermfg = palette.cterm.gray._50,
 			ctermbg = palette.cterm.transparent,
 		}, -- e.g., brackets and commas.
+		Character = { link = "Delimiter" },
 	}
 end
 return M

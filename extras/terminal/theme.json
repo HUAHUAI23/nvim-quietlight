@@ -1,0 +1,23 @@
+{
+  "background": "#F5F5F5",
+  "black": "#33374C",
+  "blue": "#33374C",
+  "brightBlack": "#33374C",
+  "brightBlue": "#717AA8",
+  "brightCyan": "#717AA8",
+  "brightGreen": "#717AA8",
+  "brightPurple": "#7A3E9D",
+  "brightRed": "#717AA8",
+  "brightWhite": "#777777",
+  "brightYellow": "#717AA8",
+  "cursorColor": "#717AA8",
+  "cyan": "#717AA8",
+  "foreground": "#33374C",
+  "green": "#717AA8",
+  "name": "Color Scheme 17",
+  "purple": "#5F005F",
+  "red": "#717AA8",
+  "selectionBackground": "#D1D1D1",
+  "white": "#333333",
+  "yellow": "#717AA8"
+}

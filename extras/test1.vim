@@ -242,4 +242,5 @@ exe "let s:sp_gray        = ' guisp=". s:palette.gui.gray[s:style] ."'"
 
 
 
+echo  "hi! Todo"            .s:fg_foreground  .s:bg_none        .s:fmt_bold
 

@@ -54,6 +54,8 @@ M.hl_group = function(palette, opts)
 			ctermfg = palette.cterm.gray._50,
 			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
 		},
+		-- underline
+		LspDiagnosticsUnderlineError = { style = "undercurl" },
 	}
 end
 
