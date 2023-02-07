@@ -145,6 +145,14 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		}, -- e.g., brackets and commas.
 		Character = { link = "Delimiter" },
+		Label = { link = "Statement" },
+		Include = { link = "PreProc" },
+		Define = { link = "PreProc" },
+		PreCondit = { link = "PreProc" },
+		SpecialChar = { link = "Special" },
+		Tag = { link = "Special" },
+		SpecialComment = { link = "Special" },
+		Debug = { link = "Special" },
 	}
 end
 return M

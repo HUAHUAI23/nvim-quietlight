@@ -121,6 +121,7 @@ let s:b      = ",bold"
 let s:u      = ",underline"
 let s:i      = ",italic"
 
+" a function local variable parameter
 function! s:build_prim(hi_elem, field)
   " Given a:hi_elem = bg, a:field = comment
   let l:vname = "s:" . a:hi_elem . "_" . a:field " s:bg_comment
