@@ -28,25 +28,31 @@ M.load = function()
 			M.set_hl(hl_group)
 		end
 	end
-	-- chanage nvim terminal colors
-	vim.g.terminal_ansi_colors = {
-		"#f5f5f5",
-		"#aa3731",
-		"#448c27",
-		"#ab6526",
-		"#4b83cd",
-		"#7a3e9d",
-		"#00ad9c",
-		"#a8a19f",
-		"#777777",
-		"#aa3731",
-		"#448c27",
-		"#ab6526",
-		"#4b83cd",
-		"#7a3e9d",
-		"#00ad9c",
-		"#f5f5f5",
+
+	-- define nvim terminal ANSI colors
+	local terminal_colors = {
+		terminal_color_0 = "#f5f5f5",
+		terminal_color_1 = "#aa3731",
+		terminal_color_2 = "#448c27",
+		terminal_color_3 = "#ab6526",
+		terminal_color_4 = "#4b83cd",
+		terminal_color_5 = "#7a3e9d",
+		terminal_color_6 = "#00ad9c",
+		terminal_color_7 = "#a8a19f",
+		terminal_color_8 = "#777777",
+		terminal_color_9 = "#aa3731",
+		terminal_color_10 = "#448c27",
+		terminal_color_11 = "#ab6526",
+		terminal_color_12 = "#4b83cd",
+		terminal_color_13 = "#7a3e9d",
+		terminal_color_14 = "#00ad9c",
+		terminal_color_15 = "#f5f5f5",
 	}
+	if opts.ansi_terminal_colors then
+		for k, v in pairs(terminal_colors) do
+			vim.g[k] = v
+		end
+	end
 end
 
 M.set_hl = function(hl_group)

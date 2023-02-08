@@ -58,7 +58,7 @@ M.hl_group = function(palette, opts)
 		-- https://neovim.io/doc/user/diagnostic.html
 		-- DiagnosticUnderlineError xxx cterm=underline gui=underline guisp=Red
 		-- underline
-		DiagnosticUnderlineError = { strikethrough = true, sp = "Red" }, -- diagnostic underline
+		DiagnosticUnderlineError = { standout = true, strikethrough = true, sp = "Red" }, -- diagnostic underline
 		DiagnosticUnderlineWarn = { standout = true, sp = "Orange" },
 	}
 end
