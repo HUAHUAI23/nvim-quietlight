@@ -28,6 +28,8 @@ local base_configuration = {
 		lsp = true,
 		bufferline = true,
 		treesitter = true,
+		notify = true,
+		nvimtree = true,
 	},
 }
 return base_configuration

@@ -56,14 +56,20 @@ M.hl_group = function(palette, opts)
 
 		["@conditional"] = { link = "Conditional" },
 		["@repeat"] = { link = "Repeat" },
-		-- ["@debug"] = { link = "Debug" },
-		-- ["@label"] = { link = "Label" },
-		-- ["@include"] = { link = "Include" },
+		["@debug"] = { link = "Debug" },
+		["@label"] = { link = "Label" },
+		["@include"] = { link = "Include" },
 		["@exception"] = { link = "Exception" },
 
 		-- Types.
 		["@type"] = { link = "Type" },
-		["@type.builtin"] = { link = "@variable.builtin" },
+		["@type.builtin"] = {
+			fg = palette.gui.red._0,
+			bg = palette.gui.transparent,
+			italic = true,
+			ctermfg = palette.cterm.red._0,
+			ctermbg = palette.cterm.transparent,
+		},
 		["@type.qualifier"] = { link = "Type" },
 		["@type.definition"] = { link = "Type" },
 
