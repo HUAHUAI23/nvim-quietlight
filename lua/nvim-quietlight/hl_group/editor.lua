@@ -373,7 +373,7 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		},
 		Todo = {
-			fg = palette.gui.black._100,
+			fg = palette.gui.purple._0,
 			bg = palette.gui.transparent,
 			bold = true,
 			ctermfg = palette.cterm.gray._50,
