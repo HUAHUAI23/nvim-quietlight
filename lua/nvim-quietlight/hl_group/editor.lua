@@ -369,6 +369,7 @@ M.hl_group = function(palette, opts)
 			fg = palette.gui.red._0,
 			bg = palette.gui.transparent,
 			undercurl = true,
+			bold = true,
 			ctermfg = palette.cterm.red._0,
 			ctermbg = palette.cterm.transparent,
 		},

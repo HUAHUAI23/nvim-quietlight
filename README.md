@@ -68,18 +68,19 @@ vim.cmd("highlight clear ColorColumn")
 
 ## Configuration
 
-this is default configuration and you can overwrite default settings:
+this is default configuration and you can overwrite the default settings:
 
 ```lua
 require(nvim - quietlight).setup(require(nvim - quietlight).setup({
+ ansi_terminal_colors = false,
  transparent_background = false,
  dim_inactive_windows = {
   enabled = false,
   color = nil,
  },
  syntax = {
-  booleans = {}, --{ bold = true, italic = true } or { fg = "#xxxxxx", bg="#xxxxxx" }
-  comments = {}, -- see nvim.api.nvim_set_hl  https://neovim.io/doc/user/api.html
+  booleans = {},
+  comments = {},
   identifiers = {},
   statements = {},
   conditionals = {},
@@ -100,9 +101,11 @@ require(nvim - quietlight).setup(require(nvim - quietlight).setup({
   lsp = true,
   bufferline = true,
   treesitter = true,
+  notify = true,
+  nvimtree = true,
  },
-})
-)
+}))
+
 ```
 
 You must invoke the `setup` function before the `:colorscheme quietlight` command to respect your configuration settings.

@@ -7,7 +7,8 @@ local palette = {
 		transparent = "none",
 		white = {
 			_0 = "#ffffff",
-			_50 = "#f5f5f5",
+			_30 = "#f5f5f5",
+			_50 = "#f3f3f3",
 			_100 = "#eeeeee",
 			_150 = "#e6e6e6",
 			_200 = "#cccccc",
@@ -48,6 +49,7 @@ local palette = {
 			_0 = "#00005f",
 			_50 = "#91b3e0",
 			_100 = "#4b83cd",
+			-- PERF: ehanced for tree-sitter
 			_150 = "#717AA8",
 		},
 		purple = {
