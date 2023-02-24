@@ -329,6 +329,7 @@ M.hl_group = function(palette, opts)
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.gray._100,
 			ctermbg = palette.cterm.transparent,
+			bold = true,
 		},
 		SpecialKey = {
 			fg = palette.gui.gray._100,

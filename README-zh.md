@@ -95,6 +95,7 @@ require(nvim - quietlight).setup(require(nvim - quietlight).setup({
   treesitter = true,
   notify = true,
   nvimtree = true,
+  indentline = true,
  },
 }))
 ```
