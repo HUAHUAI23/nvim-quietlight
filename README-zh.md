@@ -64,6 +64,7 @@ vim.cmd("highlight clear ColorColumn")
 
 ```lua
 require(nvim - quietlight).setup(require(nvim - quietlight).setup({
+ ansi_terminal_colors = false,
  transparent_background = false,
  dim_inactive_windows = {
   enabled = false,
@@ -92,9 +93,10 @@ require(nvim - quietlight).setup(require(nvim - quietlight).setup({
   lsp = true,
   bufferline = true,
   treesitter = true,
+  notify = true,
+  nvimtree = true,
  },
-})
-)
+}))
 ```
 
 必须在 `:colorscheme quietlight` 设置nvim主题前调用 `setup` 函数来对quietlight进行配置，否则用户配置不会生效，将会使用默认配置

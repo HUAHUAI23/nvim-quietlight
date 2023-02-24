@@ -49,7 +49,9 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.white._50,
 		},
 		-- Cursor highlights.
-		-- Cursor
+		Cursor = {
+			bold = true,
+		},
 		-- ICursor
 		-- CursorIM
 		CursorColumn = {

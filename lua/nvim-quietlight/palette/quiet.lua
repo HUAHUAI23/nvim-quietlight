@@ -9,6 +9,7 @@ local palette = {
 			_0 = "#ffffff",
 			_30 = "#f5f5f5",
 			_50 = "#f3f3f3",
+			-- _50 = "#FF0000",
 			_100 = "#eeeeee",
 			_150 = "#e6e6e6",
 			_200 = "#cccccc",

@@ -79,8 +79,8 @@ require(nvim - quietlight).setup(require(nvim - quietlight).setup({
   color = nil,
  },
  syntax = {
-  booleans = {},
-  comments = {},
+  booleans = {}, --{ bold = true, italic = true } or { fg = "#xxxxxx", bg="#xxxxxx" }
+  comments = {}, -- see nvim.api.nvim_set_hl  https://neovim.io/doc/user/api.html
   identifiers = {},
   statements = {},
   conditionals = {},

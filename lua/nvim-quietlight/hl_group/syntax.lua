@@ -54,6 +54,7 @@ M.hl_group = function(palette, opts)
 			fg = palette.gui.purple._0,
 			bg = palette.gui.transparent,
 			bold = true,
+			italic = true,
 			ctermfg = palette.cterm.purple._0,
 			ctermbg = palette.cterm.transparent,
 		}, opts.syntax.keywords),
