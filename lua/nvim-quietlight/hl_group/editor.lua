@@ -26,7 +26,7 @@ M.hl_group = function(palette, opts)
 		}, -- Non-current windows.
 		NormalFloat = {
 			fg = palette.gui.black._100,
-			bg = palette.gui.white._230,
+			bg = palette.gui.white._52,
 			ctermfg = palette.cterm.gray._0,
 			ctermbg = palette.cterm.white._50,
 		},
@@ -287,7 +287,8 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.white._50,
 		},
 		FloatBorder = {
-			fg = palette.gui.purple._50,
+			fg = palette.gui.gray._110,
+			-- fg = palette.gui.purple._50,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.purple._50,
 			ctermbg = palette.cterm.transparent,

@@ -5,10 +5,11 @@ local M = {}
 M.hl_group = function(palette, opts)
 	return {
 		Comment = vim.tbl_extend("force", {
-			fg = palette.gui.gray._50,
+			fg = palette.gui.gray._210,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.gray._100,
 			ctermbg = palette.cterm.transparent,
+			bold = true,
 		}, opts.syntax.comments),
 		Constant = vim.tbl_extend("force", {
 			fg = palette.gui.orange._0,

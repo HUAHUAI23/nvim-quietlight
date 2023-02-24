@@ -41,3 +41,12 @@ vim.api.nvim_set_hl(0, "BufferLineErrorSelected", { fg = "#9E9E9E", bold = true,
 
 vim.api.nvim_set_hl(0, "BufferLineBufferSelected", { fg = "#959595", bold = true, italic = true, sp = "#959595" })
 vim.api.nvim_set_hl(0, "BufferLineCloseButtonSelected", { fg = "#959595", bold = true, sp = "#959595" })
+
+-- make webdevicon colors match the theme
+local ok, result = pcall(require, "nvim-web-devicons")
+if ok then
+	local icons = result.get_icons()
+	for _, v in pairs(icons) do
+		vim.api.nvim_set_hl(0, "DevIcon" .. v.name, { fg = "#6C6C6C" })
+	end
+end
