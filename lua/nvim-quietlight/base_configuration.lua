@@ -30,6 +30,7 @@ local base_configuration = {
 		treesitter = true,
 		notify = true,
 		nvimtree = true,
+		indentline = true,
 	},
 }
 return base_configuration

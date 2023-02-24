@@ -15,7 +15,6 @@ M.hl_group = function(palette, opts)
 		["@punct.delimiter"] = { link = "Delimiter" },
 		["@punct.bracket"] = { link = "Delimiter" },
 		["@punct.special"] = { link = "Delimiter" },
-
 		-- Literals.
 		["@string"] = { link = "String" },
 		["@string.regex"] = {
@@ -29,38 +28,32 @@ M.hl_group = function(palette, opts)
 		["@string.special"] = { link = "String" },
 		["@character"] = { link = "SpecialKey" },
 		["@character.special"] = { link = "SpecialKey" },
-
 		["@number"] = { link = "Number" },
 		["@float"] = { link = "Float" },
 		["@boolean"] = { link = "Boolean" },
-
 		-- Functions
 		["@function"] = { link = "Function" },
 		["@method"] = { link = "Function" },
-		["@method.call"] = { link = "Function" },
-
+		["@method.call"] = { fg = palette.gui.gray._200, bold = true },
 		["@constructor"] = { link = "Function" },
 		["@parameter"] = {
-			fg = palette.gui.blue._150,
+			fg = palette.gui.black._100,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.blue._150,
 			ctermbg = palette.cterm.transparent,
 		},
 		["@parameter.reference"] = { link = "@parameter" },
-
 		-- Keywords.
 		["@keyword"] = { link = "Keyword" },
 		["@keyword.function"] = { link = "Keyword" },
 		["@keyword.operator"] = { link = "Exception" },
 		["@keyword.return"] = { link = "Exception" },
-
 		["@conditional"] = { link = "Conditional" },
 		["@repeat"] = { link = "Repeat" },
 		["@debug"] = { link = "Debug" },
 		["@label"] = { link = "Label" },
 		["@include"] = { link = "Include" },
 		["@exception"] = { link = "Exception" },
-
 		-- Types.
 		["@type"] = { link = "Type" },
 		["@type.builtin"] = {
@@ -72,12 +65,10 @@ M.hl_group = function(palette, opts)
 		},
 		["@type.qualifier"] = { link = "Type" },
 		["@type.definition"] = { link = "Type" },
-
 		["@storageclass"] = { link = "StorageClass" },
 		["@attribute"] = { link = "Constant" },
 		["@field"] = { link = "@parameter" },
 		["@property"] = { link = "@field" },
-
 		-- Identifiers.
 		["@constant"] = { link = "Constant" },
 		["@constant.builtin"] = {
@@ -85,7 +76,7 @@ M.hl_group = function(palette, opts)
 		},
 		["@variable.builtin"] = {
 
-			fg = palette.gui.red._0,
+			fg = palette.gui.purple._50,
 			bg = palette.gui.transparent,
 			italic = true,
 			ctermfg = palette.cterm.red._0,
@@ -100,9 +91,7 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		},
 		["@const.macro"] = { link = "Macro" },
-
 		["@symbol"] = { link = "Special" },
-
 		-- Text. -- Markdown
 
 		["@text"] = { link = "Normal" },
@@ -113,7 +102,6 @@ M.hl_group = function(palette, opts)
 			ctermfg = palette.cterm.red._0,
 			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
 		},
-
 		["@text.emphasis"] = {
 			fg = palette.gui.green._50,
 			bg = opts.transparent_background and palette.gui.transparent or palette.gui.white._50,
@@ -130,7 +118,6 @@ M.hl_group = function(palette, opts)
 		["@text.environment"] = { link = "Macro" },
 		["@text.environment.name"] = { link = "Type" },
 		["@text.reference"] = { link = "Constant" },
-
 		["@text.danger"] = { link = "Exception" },
 		["@text.note"] = {
 			fg = palette.gui.gray._100,
@@ -139,7 +126,6 @@ M.hl_group = function(palette, opts)
 			ctermfg = palette.cterm.gray._50,
 			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
 		},
-
 		["@text.todo"] = { link = "Todo" },
 		["@text.warning"] = {
 			fg = palette.gui.orange._30,
@@ -148,11 +134,9 @@ M.hl_group = function(palette, opts)
 			ctermfg = palette.cterm.orange._0,
 			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
 		},
-
 		-- Tags.
 		["@tag.delimiter"] = { link = "Comment" },
 		["@tag.attribute"] = { link = "@parameter" },
-
 		-- Miscellaneous.
 		["@comment"] = { link = "Comment" },
 		["@define"] = { link = "PreProc" },

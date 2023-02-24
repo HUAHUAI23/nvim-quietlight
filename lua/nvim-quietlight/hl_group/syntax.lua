@@ -98,10 +98,11 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		},
 		Repeat = vim.tbl_extend("force", {
-			fg = palette.gui.blue._150,
+			fg = palette.gui.gray._180,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.blue._150,
 			ctermbg = palette.cterm.transparent,
+			italic = true,
 		}, opts.syntax.loops),
 		Boolean = vim.tbl_extend("force", {
 			fg = palette.gui.purple._50,
@@ -112,10 +113,11 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		}, opts.syntax.booleans),
 		Conditional = vim.tbl_extend("force", {
-			fg = palette.gui.blue._100,
+			fg = palette.gui.gray._180,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.blue._200,
 			ctermbg = palette.cterm.transparent,
+			italic = true,
 		}, opts.syntax.conditionals),
 		Number = vim.tbl_extend("force", {
 			fg = palette.gui.orange._0,

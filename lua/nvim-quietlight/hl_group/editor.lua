@@ -3,6 +3,7 @@ local M = {}
 -- local opts = require("nvim-quietlight.base_configuration")
 
 M.hl_group = function(palette, opts)
+	-- M.hl_group = function()
 	return {
 		-- Normal text highlights.
 		Normal = {
@@ -24,8 +25,8 @@ M.hl_group = function(palette, opts)
 				or palette.cterm.white._50,
 		}, -- Non-current windows.
 		NormalFloat = {
-			fg = palette.gui.black._50,
-			bg = palette.gui.white._50,
+			fg = palette.gui.black._100,
+			bg = palette.gui.white._230,
 			ctermfg = palette.cterm.gray._0,
 			ctermbg = palette.cterm.white._50,
 		},
@@ -85,7 +86,7 @@ M.hl_group = function(palette, opts)
 		}, -- Visual mode selection when vim is 'Not Owning the Selection'
 		-- Line number highlights.
 		LineNr = {
-			fg = palette.gui.gray._50,
+			fg = palette.gui.gray._180,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.gray._100,
 			ctermbg = palette.cterm.white.transparent,
@@ -230,7 +231,7 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.red._100,
 		},
 		WarningMsg = {
-			fg = palette.gui.green._100,
+			fg = palette.gui.gray._150,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.green._50,
 			ctermbg = palette.cterm.transparent,
@@ -292,17 +293,23 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		},
 		VertSplit = {
-			fg = palette.gui.purple._50,
+			fg = palette.gui.gray._110,
 			bg = opts.transparent_background and palette.gui.transparent or palette.gui.white._50,
 			bold = true,
 			ctermfg = palette.cterm.purple._50,
 			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
 		},
 		MatchParen = {
-			fg = palette.gui.black._50,
-			bg = palette.gui.green._100,
+			fg = palette.gui.white._50,
+			bg = palette.gui.purple._50,
 			ctermfg = palette.cterm.gray._0,
 			ctermbg = palette.cterm.green._50,
+		},
+		MsgArea = {
+			fg = palette.gui.black._100,
+			bg = palette.gui.transparent,
+			ctermfg = palette.cterm.gray._50,
+			ctermbg = palette.cterm.transparent,
 		},
 		ModeMsg = {
 			fg = palette.gui.green._50,
@@ -311,7 +318,7 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		},
 		MoreMsg = {
-			fg = palette.gui.green._50,
+			fg = palette.gui.black._100,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.green._0,
 			ctermbg = palette.cterm.transparent,

@@ -1,7 +1,7 @@
 -- https://www.tusij.com/color/F1BF99#online-palette
 -- https://sunpma.com/other/rgb/
 local palette = {
-	gui_dim_inactive = "#cccccc",
+	gui_dim_inactive = "#EDEDF5",
 	cterm_dim_inactive = 145,
 	gui = {
 		transparent = "none",
@@ -13,17 +13,26 @@ local palette = {
 			_100 = "#eeeeee",
 			_150 = "#e6e6e6",
 			_200 = "#cccccc",
+			_210 = "#dfdfdf",
+			_220 = "#D9D9D9",
+			_230 = "#EDEDF5",
 		},
 		black = {
 			_0 = "#000000",
 			_50 = "#333333",
+			_100 = "#424242",
 		},
 
 		gray = {
 			_0 = "#a8a19f",
 			_50 = "#aaaaaa",
 			_100 = "#a1a8b1",
+			_110 = "#9E9E9E",
+			_120 = "#959595",
 			_150 = "#777777",
+			_180 = "#6d705b",
+			_200 = "#6C6C6C",
+			_210 = "#c2c2c2",
 		},
 		green = {
 			_0 = "#a6b39b",

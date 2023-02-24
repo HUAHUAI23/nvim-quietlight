@@ -53,6 +53,9 @@ M.load = function()
 			vim.g[k] = v
 		end
 	end
+
+	-- set other plugin highlights
+	require("nvim-quietlight.hl_group.plugins.others")
 end
 
 M.set_hl = function(hl_group)
