@@ -1,39 +1,5 @@
-local terminal_colors = {
-	colors1 = {
-		terminal_color_0 = "#f5f5f5",
-		terminal_color_1 = "#aa3731",
-		terminal_color_2 = "#448c27",
-		terminal_color_3 = "#ab6526",
-		terminal_color_4 = "#4b83cd",
-		terminal_color_5 = "#7a3e9d",
-		terminal_color_6 = "#00ad9c",
-		terminal_color_7 = "#a8a19f",
-		terminal_color_8 = "#777777",
-		terminal_color_9 = "#aa3731",
-		terminal_color_10 = "#448c27",
-		terminal_color_11 = "#ab6526",
-		terminal_color_12 = "#4b83cd",
-		terminal_color_13 = "#7a3e9d",
-		terminal_color_14 = "#00ad9c",
-		terminal_color_15 = "#f5f5f5",
-	},
-	colors2 = {
-		terminal_color_0 = "#33374C",
-		terminal_color_1 = "#717AA8",
-		terminal_color_2 = "#717AA8",
-		terminal_color_3 = "#717AA8",
-		terminal_color_4 = "#33374C",
-		terminal_color_5 = "#5F005F",
-		terminal_color_6 = "#717AA8",
-		terminal_color_7 = "#333333",
-		terminal_color_8 = "#33374C",
-		terminal_color_9 = "#717AA8",
-		terminal_color_10 = "#717AA8",
-		terminal_color_11 = "#717AA8",
-		terminal_color_12 = "#717AA8",
-		terminal_color_13 = "#7A3E9D",
-		terminal_color_14 = "#717AA8",
-		terminal_color_15 = "#777777",
-	},
+local colorcaseList = {
+	"colors1",
+	"colors2",
 }
-vim.pretty_print(vim.tbl_contains(terminal_colors, "colors1"))
+vim.pretty_print(vim.tbl_contains(colorcaseList, "colors1"))

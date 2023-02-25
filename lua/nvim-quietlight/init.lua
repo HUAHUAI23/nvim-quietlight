@@ -68,7 +68,7 @@ M.load = function()
 			terminal_color_15 = "#777777",
 		},
 	}
-	colorcaseList = {
+	local colorcaseList = {
 		"colors1",
 		"colors2",
 	}
