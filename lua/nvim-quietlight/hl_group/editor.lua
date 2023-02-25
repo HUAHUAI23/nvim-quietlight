@@ -325,7 +325,7 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		},
 		NonText = {
-			fg = palette.gui.gray._50,
+			fg = palette.gui.black._100,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.gray._100,
 			ctermbg = palette.cterm.transparent,
