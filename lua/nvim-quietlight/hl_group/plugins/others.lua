@@ -40,7 +40,7 @@ vim.api.nvim_set_hl(0, "BufferLineGroupLabel", { fg = "#c2c2c2", bg = "#c2c2c2",
 
 -- modifier
 vim.api.nvim_set_hl(0, "BufferLineModified", { fg = "#959595", bg = "#d5d5d5", bold = true, sp = "#ca7602" })
-vim.api.nvim_set_hl(0, "BufferLineModifiedSelected", { fg = "#959595", bg = "#d5d5d5", bold = true, sp = "#ca7602" })
+vim.api.nvim_set_hl(0, "BufferLineModifiedSelected", { fg = "#959595", bold = true, sp = "#959595" })
 vim.api.nvim_set_hl(0, "BufferLineModifiedVisible", { fg = "#c2c2c2", bg = "#dfdfdf", bold = true, sp = "#c2c2c2" })
 
 -- visible  5+7
