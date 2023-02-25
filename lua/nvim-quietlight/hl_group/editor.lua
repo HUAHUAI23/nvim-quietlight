@@ -122,6 +122,7 @@ M.hl_group = function(palette, opts)
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.green._0,
 			ctermbg = palette.cterm.transparent,
+			bold = true,
 		}, -- `hit-enter` prompt and yes/no questions
 		QuickFixLine = { link = "CursorLine" }, -- Current `quickfix` item in the quickfix window. Combined with `hl-CursorLine` when the cursor is there.
 		-- Search/substitution highlights.
@@ -279,6 +280,7 @@ M.hl_group = function(palette, opts)
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.purple._50,
 			ctermbg = palette.cterm.transparent,
+			bold = true,
 		},
 		EndOfBuffer = {
 			fg = palette.gui.white._50,
