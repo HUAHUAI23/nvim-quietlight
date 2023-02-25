@@ -68,7 +68,11 @@ M.load = function()
 			terminal_color_15 = "#777777",
 		},
 	}
-	if vim.tbl_contains(terminal_colors, opts.ansi_terminal_colors) then
+	colorcaseList = {
+		"colors1",
+		"colors2",
+	}
+	if vim.tbl_contains(colorcaseList, opts.ansi_terminal_colors) then
 		for k, v in pairs(terminal_colors[opts.ansi_terminal_colors]) do
 			vim.g[k] = v
 		end
