@@ -26,7 +26,7 @@ M.hl_group = function(palette, opts)
 		}, -- Non-current windows.
 		NormalFloat = {
 			fg = palette.gui.black._100,
-			bg = palette.gui.white._52,
+			bg = palette.gui.white._50,
 			ctermfg = palette.cterm.gray._0,
 			ctermbg = palette.cterm.white._50,
 		},
