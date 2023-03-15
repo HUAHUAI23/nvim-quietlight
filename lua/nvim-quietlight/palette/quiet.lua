@@ -23,7 +23,6 @@ local palette = {
 			_50 = "#333333",
 			_100 = "#424242",
 		},
-
 		gray = {
 			_0 = "#a8a19f",
 			_50 = "#aaaaaa",
@@ -60,6 +59,7 @@ local palette = {
 			_0 = "#00005f",
 			_50 = "#91b3e0",
 			_100 = "#4b83cd",
+			_110 = "#4B69C6",
 			-- PERF: ehanced for tree-sitter
 			_150 = "#717AA8",
 		},

@@ -37,7 +37,7 @@ M.hl_group = function(palette, opts)
 		["@method.call"] = { fg = palette.gui.gray._200, bold = true },
 		["@constructor"] = { link = "Function" },
 		["@parameter"] = {
-			fg = palette.gui.black._100,
+			fg = palette.gui.gray._180,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.blue._150,
 			ctermbg = palette.cterm.transparent,
@@ -46,7 +46,12 @@ M.hl_group = function(palette, opts)
 		-- Keywords.
 		["@keyword"] = { link = "Keyword" },
 		["@keyword.function"] = { link = "Keyword" },
-		["@keyword.operator"] = { link = "Exception" },
+		["@keyword.operator"] = {
+			fg = palette.gui.green._50,
+			bg = palette.gui.transparent,
+			ctermfg = palette.cterm.green._50,
+			ctermbg = palette.cterm.transparent,
+		},
 		["@keyword.return"] = { link = "Exception" },
 		["@conditional"] = { link = "Conditional" },
 		["@repeat"] = { link = "Repeat" },
@@ -57,10 +62,10 @@ M.hl_group = function(palette, opts)
 		-- Types.
 		["@type"] = { link = "Type" },
 		["@type.builtin"] = {
-			fg = palette.gui.red._0,
+			fg = palette.gui.red._50,
 			bg = palette.gui.transparent,
 			italic = true,
-			ctermfg = palette.cterm.red._0,
+			ctermfg = palette.cterm.red._50,
 			ctermbg = palette.cterm.transparent,
 		},
 		["@type.qualifier"] = { link = "Type" },
@@ -112,10 +117,10 @@ M.hl_group = function(palette, opts)
 		["@text.underline"] = { underline = true },
 		["@text.strike"] = { strikethrough = true },
 		["@text.title"] = {
-			fg = palette.gui.purple._0,
+			fg = palette.gui.red._50,
 			bg = palette.gui.transparent,
 			bold = true,
-			ctermfg = palette.cterm.purple._0,
+			ctermfg = palette.cterm.red._50,
 			ctermbg = palette.cterm.transparent,
 		},
 		["@text.literal"] = { link = "String" },

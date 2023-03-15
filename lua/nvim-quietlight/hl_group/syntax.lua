@@ -3,13 +3,13 @@ local M = {}
 -- local palette = require("nvim-quietlight.palette.quiet")
 -- local opts = require("nvim-quietlight.base_configuration")
 M.hl_group = function(palette, opts)
+	-- M.hl_group = function()
 	return {
 		Comment = vim.tbl_extend("force", {
 			fg = palette.gui.gray._210,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.gray._100,
 			ctermbg = palette.cterm.transparent,
-			bold = true,
 		}, opts.syntax.comments),
 		Constant = vim.tbl_extend("force", {
 			fg = palette.gui.orange._0,
@@ -52,11 +52,11 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.transparent,
 		}, opts.syntax.operators),
 		Keyword = vim.tbl_extend("force", {
-			fg = palette.gui.purple._0,
+			fg = palette.gui.blue._110,
 			bg = palette.gui.transparent,
 			bold = true,
 			italic = true,
-			ctermfg = palette.cterm.purple._0,
+			ctermfg = palette.cterm.blue._100,
 			ctermbg = palette.cterm.transparent,
 		}, opts.syntax.keywords),
 		PreProc = vim.tbl_extend("force", {
@@ -129,10 +129,10 @@ M.hl_group = function(palette, opts)
 		}, opts.syntax.numbers),
 		Float = { link = "Number" },
 		Exception = {
-			fg = palette.gui.red._0,
+			fg = palette.gui.red._50,
 			bg = palette.gui.transparent,
 			bold = true,
-			ctermfg = palette.cterm.red._0,
+			ctermfg = palette.cterm.red._50,
 			ctermbg = palette.cterm.transparent,
 		},
 		Macro = {
