@@ -6,7 +6,7 @@ M.hl_group = function(palette, opts)
 	-- M.hl_group = function()
 	return {
 		IndentBlanklineContextChar = {
-			fg = palette.gui.gray._110,
+			fg = palette.gui.black._100,
 			bg = palette.gui.transparent,
 		},
 		IndentBlanklineSpaceCharBlankline = {
