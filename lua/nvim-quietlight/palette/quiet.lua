@@ -7,8 +7,8 @@ local palette = {
 		transparent = "none",
 		white = {
 			_0 = "#ffffff",
-			_30 = "#f5f5f5",
-			_50 = "#f3f3f3",
+			_50 = "#f5f5f5",
+			_30 = "#f3f3f3",
 			-- _50 = "#FF0000",
 			_52 = "#f0f0f0",
 			_100 = "#eeeeee",
@@ -20,6 +20,7 @@ local palette = {
 		},
 		black = {
 			_0 = "#000000",
+			_10 = "#1a1a1a",
 			_50 = "#333333",
 			_100 = "#424242",
 		},
