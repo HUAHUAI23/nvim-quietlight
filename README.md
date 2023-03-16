@@ -1,7 +1,7 @@
 <section align="center">
-  <img align="center" src="./stuff/giphy.gif" width="100"/>
+  <img src="./stuff/giphy.gif" width="100"/>
   <br>
-  <p align="center">A quietlight theme generate from <a href="https://github.com/microsoft/vscode/blob/main/extensions/theme-quietlight/themes/quietlight-color-theme.json">vscode quietlight theme</a> and <a href="https://github.com/aonemd/quietlight.vim">quietlight.vim</a>
+  <p>A quietlight theme generate from <a href="https://github.com/microsoft/vscode/blob/main/extensions/theme-quietlight/themes/quietlight-color-theme.json">vscode quietlight theme</a> and <a href="https://github.com/aonemd/quietlight.vim">quietlight.vim</a>
   </p>
   <hr>
 </section>
