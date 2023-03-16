@@ -23,14 +23,6 @@
       <img width="767" alt="telescope.nvim" src="./stuff/4.png">
     </td>
   </tr>
-   <tr>
-    <td>
-      <img width="767" alt="nvim-cmp" src="./stuff/5.png">
-    </td>
-    <td>
-      <img width="787" alt="Transparent background" src="./stuff/6.png">
-    </td>
-  </tr>
 </table>
 <br>
 
