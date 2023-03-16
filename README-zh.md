@@ -1,7 +1,7 @@
 <section align="center">
-  <img src="./stuff/giphy.gif" width="100"/>
+  <img align="center" src="./stuff/giphy.gif" width="100"/>
   <br>
-  <p>quietlight 主题源自 <a href="https://github.com/microsoft/vscode/blob/main/extensions/theme-quietlight/themes/quietlight-color-theme.json">vscode quietlight theme</a> 和 <a href="https://github.com/aonemd/quietlight.vim">quietlight.vim</a>
+  <p align="center">quietlight 主题源自 <a href="https://github.com/microsoft/vscode/blob/main/extensions/theme-quietlight/themes/quietlight-color-theme.json">vscode quietlight theme</a> 和 <a href="https://github.com/aonemd/quietlight.vim">quietlight.vim</a>
   </p>
   <hr>
 </section>
