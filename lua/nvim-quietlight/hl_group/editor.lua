@@ -7,13 +7,13 @@ M.hl_group = function(palette, opts)
 	return {
 		-- Normal text highlights.
 		Normal = {
-			fg = palette.gui.black._50,
+			fg = palette.gui.gray._205,
 			bg = opts.transparent_background and palette.gui.transparent or palette.gui.white._50,
 			ctermfg = palette.cterm.gray._0,
 			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
 		},
 		NormalNC = {
-			fg = palette.gui.black._50,
+			fg = palette.gui.gray._205,
 			bg = (opts.dim_inactive_windows.enabled and (opts.dim_inactive_windows.color or palette.gui_dim_inactive))
 				or (opts.transparent_background and palette.gui.transparent)
 				or palette.gui.white._50,
@@ -25,7 +25,7 @@ M.hl_group = function(palette, opts)
 				or palette.cterm.white._50,
 		}, -- Non-current windows.
 		NormalFloat = {
-			fg = palette.gui.black._100,
+			fg = palette.gui.gray._205,
 			bg = palette.gui.white._50,
 			ctermfg = palette.cterm.gray._0,
 			ctermbg = palette.cterm.white._50,

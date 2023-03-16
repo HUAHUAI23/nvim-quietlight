@@ -72,7 +72,7 @@ this is default configuration and you can overwrite the default settings:
 
 ```lua
 require("nvim-quietlight").setup({
- ansi_terminal_colors = "",  -- "colors1" or "colors2"
+ ansi_terminal_colors = "",  -- "colors1", "color2" or "colors3"
  transparent_background = false,
  dim_inactive_windows = {
   enabled = false,

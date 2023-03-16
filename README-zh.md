@@ -64,7 +64,7 @@ vim.cmd("highlight clear ColorColumn")
 
 ```lua
 require("nvim-quietlight").setup({
- ansi_terminal_colors = "",  -- "colors1" or "colors2"
+ ansi_terminal_colors = "",  -- "colors1", "colors2" or "colors3"
  transparent_background = false,
  dim_inactive_windows = {
   enabled = false,

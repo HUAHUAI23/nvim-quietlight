@@ -67,10 +67,29 @@ M.load = function()
 			terminal_color_14 = "#717AA8",
 			terminal_color_15 = "#777777",
 		},
+		colors3 = {
+			terminal_color_0 = "#33374C",
+			terminal_color_1 = "#717AA8",
+			terminal_color_2 = "#717AA8",
+			terminal_color_3 = "#717AA8",
+			terminal_color_4 = "#717AA8",
+			terminal_color_5 = "#5F005F",
+			terminal_color_6 = "#717AA8",
+			terminal_color_7 = "#333333",
+			terminal_color_8 = "#33374C",
+			terminal_color_9 = "#717AA8",
+			terminal_color_10 = "#717AA8",
+			terminal_color_11 = "#717AA8",
+			terminal_color_12 = "#717AA8",
+			terminal_color_13 = "#7A3E9D",
+			terminal_color_14 = "#717AA8",
+			terminal_color_15 = "#777777",
+		},
 	}
 	local colorcaseList = {
 		"colors1",
 		"colors2",
+		"colors3",
 	}
 	if vim.tbl_contains(colorcaseList, opts.ansi_terminal_colors) then
 		for k, v in pairs(terminal_colors[opts.ansi_terminal_colors]) do

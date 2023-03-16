@@ -108,6 +108,19 @@ vim.api.nvim_set_hl(0, "BufferLineNumbers", { fg = "#c2c2c2", bg = "#d5d5d5", bo
 vim.api.nvim_set_hl(0, "BufferLineTab", { fg = "#c2c2c2", bg = "#d5d5d5", bold = true })
 vim.api.nvim_set_hl(0, "BufferLineBuffer", { fg = "#c2c2c2", bg = "#d5d5d5", bold = true })
 
+-- ------------
+-- treesitter markdown
+
+vim.api.nvim_set_hl(0, "@text.title", { bold = true, fg = "#535759" })
+vim.api.nvim_set_hl(0, "@text.strong", { bold = true, fg = "#686C6D" })
+vim.api.nvim_set_hl(0, "@text.literal", { fg = "#656A6C", bg = "#EDEDF5" })
+vim.api.nvim_set_hl(0, "@text.reference", { fg = "#6886AA", bold = true })
+vim.api.nvim_set_hl(0, "@text.uri", { fg = "#6886AA" })
+vim.api.nvim_set_hl(0, "@punctuation.special", { fg = "#919394", bold = true })
+vim.api.nvim_set_hl(0, "@text.quote", { fg = "#A7A9AA", bg = "#EDEDF5" })
+vim.api.nvim_set_hl(0, "SpellBad", { undercurl = true })
+vim.api.nvim_set_hl(0, "SpellLocal", { underline = true })
+
 -- make webdevicon colors match the theme
 local ok, result = pcall(require, "nvim-web-devicons")
 if ok then
