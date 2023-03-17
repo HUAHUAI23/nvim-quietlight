@@ -1,5 +1,5 @@
 local base_configuration = {
-	ansi_terminal_colors = "",
+	ansi_terminal_colors = "colors3",
 	transparent_background = false,
 	dim_inactive_windows = {
 		enabled = false,
