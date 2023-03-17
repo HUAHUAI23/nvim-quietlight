@@ -111,6 +111,7 @@ vim.api.nvim_set_hl(0, "BufferLineBuffer", { fg = "#c2c2c2", bg = "#d5d5d5", bol
 -- ------------
 -- treesitter markdown
 
+vim.api.nvim_set_hl(0, "@text", { fg = "#686C6D" })
 vim.api.nvim_set_hl(0, "@text.title", { bold = true, fg = "#535759" })
 vim.api.nvim_set_hl(0, "@text.strong", { bold = true, fg = "#686C6D" })
 vim.api.nvim_set_hl(0, "@text.literal", { fg = "#656A6C", bg = "#EDEDF5" })
