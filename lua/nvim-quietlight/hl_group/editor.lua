@@ -303,8 +303,8 @@ M.hl_group = function(palette, opts)
 			ctermbg = opts.transparent_background and palette.cterm.transparent or palette.cterm.white._50,
 		},
 		MatchParen = {
-			fg = palette.gui.white._50,
-			bg = palette.gui.purple._50,
+			fg = palette.gui.white._0,
+			bg = palette.gui.purple._150,
 			ctermfg = palette.cterm.gray._0,
 			ctermbg = palette.cterm.green._50,
 		},
