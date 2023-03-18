@@ -309,7 +309,7 @@ M.hl_group = function(palette, opts)
 			ctermbg = palette.cterm.green._50,
 		},
 		MsgArea = {
-			fg = palette.gui.black._100,
+			fg = palette.gui.black._50,
 			bg = palette.gui.transparent,
 			ctermfg = palette.cterm.gray._50,
 			ctermbg = palette.cterm.transparent,
