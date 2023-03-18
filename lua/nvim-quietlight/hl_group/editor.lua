@@ -60,6 +60,7 @@ M.hl_group = function(palette, opts)
 			bg = palette.gui.green._150,
 			ctermfg = palette.cterm.transparent,
 			ctermbg = palette.cterm.green._100,
+			nocombine = true,
 		},
 		CursorLine = {
 			fg = palette.gui.transparent,
