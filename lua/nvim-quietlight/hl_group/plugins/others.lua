@@ -15,7 +15,8 @@ vim.api.nvim_set_hl(0, "GitSignsDelete", { bg = "none", fg = "#9e9e9e", bold = t
 -- bufferline
 -- separator
 vim.api.nvim_set_hl(0, "BufferlineCustomeNvimtree", { fg = "#959595", bg = "#c2c2c2", bold = true })
-vim.api.nvim_set_hl(0, "BufferLineOffsetSeparator", { fg = "#c2c2c2", bg = "#c2c2c2", bold = true })
+-- vim.api.nvim_set_hl(0, "BufferLineOffsetSeparator", { fg = "#c2c2c2", bg = "#c2c2c2", bold = true })
+vim.api.nvim_set_hl(0, "BufferLineSeparator", { fg = "#d5d5d5", bg = "#d5d5d5", bold = true })
 vim.api.nvim_set_hl(0, "BufferLineSeparator", { fg = "#c2c2c2", bg = "#d5d5d5", bold = true })
 vim.api.nvim_set_hl(0, "BufferLineSeparatorSelected", { fg = "#c2c2c2", bold = true })
 vim.api.nvim_set_hl(0, "BufferLineTabSeparator", { fg = "#c2c2c2", bg = "#d5d5d5", bold = true })
